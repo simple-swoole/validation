@@ -1,0 +1,37 @@
+{
+    "name": "simple-swoole/validation",
+    "description": "A validation component for simps.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "php",
+        "simps",
+        "swoole",
+        "validation"
+    ],
+    "authors": [
+        {
+            "name": "Lu Fei",
+            "email": "lufei@simps.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "simple-swoole/utils": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Simps\\Validation\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1"
+    }
+}
